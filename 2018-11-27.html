@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>fantasai’s CSSWG Spec Status Radar</title>
+<link rel="stylesheet" href="report.css">
+<style>
+	td, thead th { text-align: center; }
+	th, tr > *:first-child { text-align: left; }
+	tbody th:not([scope=rowgroup]) {
+		font-weight: normal;
+	}
+	dl[title]:before {
+		content: attr(title) ": ";
+		font-weight: bold;
+	}
+	.key, .key dt, .key dd {
+		display: inline;
+		margin: 0;
+	}
+	.key dt {
+		margin-left: 1em;
+		white-space: nowrap;
+	}
+	td:first-child { white-space: nowrap; }
+	td:last-child { text-align: left;
+</style>
+<h1>CSS Status Report</h1>
+<p class="annotation">Last updated <time>2018-11-27</time>
+
+<p>This is an unofficial report prepared by fantasai
+mostly for her own benefit.
+
+<ul>
+	<li><a href="https://lists.w3.org/Archives/Public/www-style/2018Oct/0014.html">Agenda+ publish css-box-3</a>
+	<li><a href="https://lists.w3.org/Archives/Member/w3c-css-wg/2018OctDec/0112.html">Agenda+ publish css-break-4</a>
+	<li>Agenda+ republish css-align-3
+</ul>
+
+	<dl title="Key" class=key>
+		<dt>○	<dd>Good
+		<dt>□	<dd>(Almost) Publishable (&lt; ½day)
+		<dt>△	<dd>Needs Work (1-3days)
+		<dt>×	<dd>Needs Major Work
+	</dl>
+
+<table class=data>
+<thead>
+	<tr>
+		<th>Module
+		<th>Level
+		<th>Status
+		<th>Latest
+		<th><abbr title="How far behind is the editor on agreed edits?">Edits</abbr>
+		<th><abbr title="How much work do the open unresolved issues represent?">Issues</abbr>
+		<th>Notes
+<tbody>
+	<tr>
+		<th colspan=7 scope=rowgroup>Gross Layout
+	<tr>
+		<td>CSS Flexbox
+		<td>L1
+		<td>CR
+		<td>2018/11
+		<td>○
+		<td>○
+		<td>
+	<tr>
+		<td>CSS Grid
+		<td>L1
+		<td>CR
+		<td>2017/12
+		<td>△
+		<td>△
+		<td>Blocked on <a href="https://github.com/w3c/csswg-drafts/issues/2303">2303</a> + DoC
+	<tr>
+		<td>CSS Grid
+		<td>L2
+		<td>WD
+		<td>2018/8
+		<td>△
+		<td>□
+		<td>Needs L1 prose merge; blocked on L1 publication
+	<tr>
+		<td>CSS Box Alignment
+		<td>L3
+		<td>WD
+		<td>2018/8
+		<td>□
+		<td>□
+		<td>CR blocked on dbaron's issues
+	<tr>
+		<td>CSS Display
+		<td>L3
+		<td>CR
+		<td>2018/8
+		<td>△
+		<td>□
+		<td>1 day editing + 1-2 telecons
+	<tr>
+		<td>CSS Box
+		<td>L3
+		<td>WD
+		<td>2018/8
+		<td>□
+		<td>□
+		<td>
+	<tr>
+		<td>CSS Writing Modes
+		<td>L3
+		<td>CR
+		<td>2018/5
+		<td>○
+		<td>○
+		<td>Needs impl report
+	<tr>
+		<td>CSS Writing Modes
+		<td>L4
+		<td>CR
+		<td>2018/5
+		<td>○
+		<td>○
+		<td>Needs impls
+	<tr>
+		<td>CSS Logical Properties
+		<td>L1
+		<td>WD
+		<td>2018/8
+		<td>△
+		<td>△
+		<td>
+	<tr>
+		<td>CSS Multi-column Layout
+		<td>L1
+		<td>WD
+		<td>2018/5
+		<td>△
+		<td>△
+		<td>
+	<tr>
+		<td>CSS Fragmentation
+		<td>L3
+		<td>CR
+		<td>2018/11
+		<td>○
+		<td>○
+		<td>
+	<tr>
+		<td>CSS Fragmentation
+		<td>L4
+		<td>ED
+		<td>&mdash;
+		<td>○
+		<td>△
+		<td>Agenda+ for FPWD
+<tbody>
+	<tr>
+		<th colspan=7 scope=rowgroup>Inline Layout
+	<tr>
+		<td>CSS Inline Layout
+		<td>L3
+		<td>WD
+		<td>2018/8
+		<td>△
+		<td>×
+		<td><a href="https://github.com/w3c/csswg-drafts/issues/3240">leading-trim</a> and <a href="https://github.com/w3c/csswg-drafts/issues/719">initial letter margins</a>
+	<tr>
+		<td>CSS Ruby
+		<td>L1
+		<td>WD
+		<td>2014/8
+		<td>×
+		<td>×
+		<td>Needs DoC to triage work
+	<tr>
+		<td>CSS Text
+		<td>L3
+		<td>WD
+		<td>2018/9
+		<td>□
+		<td>△
+		<td>Need to publish with overflow-wrap: anywhere. Remainder blocked on r12a, minor issues, DoC
+	<tr>
+		<td>CSS Text
+		<td>L4
+		<td>WD
+		<td>2018/9
+		<td>△
+		<td>△
+		<td>Need to publish with letter-spacing: percent
+	<tr>
+		<td>CSS Text Decoration
+		<td>L3
+		<td>CR
+		<td>2018/7
+		<td>□
+		<td>○
+		<td>Fix <a href="https://github.com/w3c/csswg-drafts/issues/3272">3272</a>
+	<tr>
+		<td>CSS Text Decoration
+		<td>L4
+		<td>WD
+		<td>2018/3
+		<td>△
+		<td>×
+		<td>
+	<tr>
+		<td>CSS Fonts
+		<td>L3
+		<td>REC
+		<td>2018/9
+		<td>□
+		<td>△
+		<td>
+	<tr>
+		<td>CSS Fonts
+		<td>L4
+		<td>WD
+		<td>2018/9
+		<td>△
+		<td>?
+		<td>
+<tbody>
+	<tr>
+		<th colspan=7 scope=rowgroup>Processing
+	<tr>
+		<td>Selectors
+		<td>L4
+		<td>WD
+		<td>2018/11
+		<td>○
+		<td>△
+		<td>
+	<tr>
+		<td>CSS Pseudo-elements
+		<td>L4
+		<td>WD
+		<td>2016/7
+		<td>△
+		<td>×
+		<td>
+	<tr>
+		<td>CSS Values and Units
+		<td>L3
+		<td>CR
+		<td>2018/8
+		<td>□
+		<td>□
+		<td>
+	<tr>
+		<td>CSS Value and Units
+		<td>L4
+		<td>WD
+		<td>2018/10
+		<td>×
+		<td>×
+		<td>
+	<tr>
+		<td>CSS Cascading and Inheritance
+		<td>L3
+		<td>CR
+		<td>2018/8
+		<td>○
+		<td>○
+		<td>
+	<tr>
+		<td>CSS Cascading and Inheritance
+		<td>L4
+		<td>CR
+		<td>2018/8
+		<td>□
+		<td>□
+		<td><a href="https://github.com/w3c/csswg-drafts/issues/3332">3332</a>
+	<tr>
+		<td>CSS Conditional Rules
+		<td>L3
+		<td>CR
+		<td>2013/4
+		<td>△
+		<td>□
+		<td>Needs DoC
+	<tr>
+		<td>CSS Conditional Rules
+		<td>L4
+		<td>ED
+		<td>&mdash;
+		<td>□
+		<td>○
+		<td>Block on L3 or make as diff
+	<tr>
+		<td>CSS Syntax
+		<td>L3
+		<td>CR
+		<td>2014/2
+		<td>×
+		<td>×
+		<td>
+	<tr>
+		<td>Media Queries
+		<td>L3
+		<td>REC
+		<td>2012/6
+		<td>○
+		<td>○
+		<td>
+	<tr>
+		<td>Media Queries
+		<td>L4
+		<td>CR
+		<td>2017/9
+		<td>□
+		<td>□
+		<td>
+	<tr>
+		<td>Media Queries
+		<td>L5
+		<td>ED
+		<td>&mdash;
+		<td>×
+		<td>×
+		<td>
+<tbody>
+	<tr>
+		<th colspan=7 scope=rowgroup>Painting
+	<tr>
+		<td>CSS Backgrounds and Borders
+		<td>L3
+		<td>CR
+		<td>2017/10
+		<td>△
+		<td>△
+		<td>
+	<tr>
+		<td>CSS Backgrounds and Borders
+		<td>L4
+		<td>ED
+		<td>&mdash;
+		<td>×
+		<td>×
+		<td>Multiple outstanding resolutions
+	<tr>
+		<td>CSS Fill and Stroke
+		<td>L3
+		<td>FPWD
+		<td>2017/4
+		<td>△
+		<td>△
+		<td>Needs triage
+	<tr>
+		<td>CSS Color
+		<td>L3
+		<td>REC
+		<td>2018/6
+		<td>○
+		<td>○
+		<td>
+	<tr>
+		<td>CSS Color
+		<td>L4
+		<td>WD
+		<td>2016/7
+		<td>?
+		<td>×
+		<td>
+	<tr>
+		<td>CSS Images
+		<td>L3
+		<td>CR
+		<td>2012/4
+		<td>△
+		<td>□
+		<td>
+	<tr>
+		<td>CSS Images
+		<td>L4
+		<td>WD
+		<td>2017/4
+		<td>?
+		<td>?
+		<td>
+<tbody>
+	<tr>
+		<th colspan=7 scope=rowgroup>Graphical Transforms
+	<tr>
+		<td>CSS Transforms
+		<td>L1
+		<td>WD
+		<td>2017/11
+		<td>○
+		<td>○
+		<td>Almost CR
+	<tr>
+		<td>CSS Transforms
+		<td>L2
+		<td>ED
+		<td>!!!!!!!
+		<td>?
+		<td>?
+		<td>NEEDS FPWD ALREADY OMG
+	<tr>
+		<td>CSS Motion path
+		<td>L1
+		<td>WD
+		<td>2017/7
+		<td>□
+		<td>□
+		<td>One issue needs edits, that's all.
+	<tr>
+		<td>CSS Easing Functions
+		<td>L1
+		<td>WD
+		<td>2017/10
+		<td>□
+		<td>□
+		<td><a href="https://github.com/w3c/csswg-drafts/issues/3205">3205</a>
+<tbody>
+	<tr>
+		<th colspan=7 scope=rowgroup>Interaction
+	<tr>
+		<td>CSS Scroll Snap
+		<td>L1
+		<td>CR
+		<td>2018/8
+		<td>□
+		<td>□
+		<td>Trivial fixes
+	<tr>
+		<td>CSS Scroll Snap
+		<td>L2
+		<td>&mdash;
+		<td>&mdash;
+		<td>△
+		<td>△
+		<td>Just needs to define an event model
+	<tr>
+		<td>CSS Basic UI
+		<td>L3
+		<td>REC
+		<td>2018/6
+		<td>○
+		<td>○
+		<td>
+	<tr>
+		<td>CSS Basic UI
+		<td>L4
+		<td>WD
+		<td>2017/12
+		<td>?
+		<td>×
+		<td>Critically need <code>appearance</code>spec
+	<tr>
+		<td>CSS Scrollbars
+		<td>L1
+		<td>WD
+		<td>2018/9
+		<td>△
+		<td>△
+		<td>Mostly just needs edits
+	<tr>
+		<td>CSS Overflow
+		<td>L3
+		<td>WD
+		<td>2018/7
+		<td>△
+		<td>△
+		<td>
+<!-- ○□△× -->
+</table>
